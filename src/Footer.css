@@ -1,0 +1,44 @@
+@media screen and (min-width: 900px) {
+    .footerButtons{
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    float: right;
+   }
+   
+   #about, #support, #press, #API, #jobs, #privacy, #terms, #directory, #profiles, #hashtags, #language{
+      color: gray;
+      background-color: rgb(233, 231, 231);
+   
+   }
+   }
+   @media screen and (max-width: 899px) {
+      #about, #support, #press, #API, #jobs, #privacy, #terms, #directory, #profiles, #hashtags, #language
+      {
+      text-align: center;
+      color: darkblue;
+      float: left;
+   
+      }
+   }
+   @media screen and (max-width: 800px) {
+   .footerButtons{
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-content: center;
+      }
+      .childDiv{
+      flex-wrap: wrap;
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      align-content: center;
+      }
+   
+   }
+
+   .footerButtons {
+      background-color: rgb(233, 231, 231);
+   }

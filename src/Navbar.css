@@ -1,0 +1,39 @@
+.navbar {
+    background-color: white;
+    border-bottom: 0.05rem solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: baseline;
+  }
+  
+  #logo button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #icons button {
+    border: none;
+    font-size: 1.9em;
+  }
+  
+  .fab {
+    font-size: 2.7em;
+    padding-bottom: 5px;
+  }
+  
+  #search {
+    display: flex;
+    align-content: center;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #search {display: none;
+    }
+  }

@@ -1,0 +1,55 @@
+.storiesBox {
+    border: 0.05rem solid lightgray;
+    background-color: white;
+}
+
+#profilePic {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+#timeStamp {
+    text-transform: uppercase;
+    color: gray;
+}
+
+#storiesHead h3 {
+    color: grey;
+    padding-left: 1rem;
+}
+
+#watchAllButton {
+    padding-right: 1rem;
+}
+
+.profile {
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#profileName {
+    margin: 0px 0px -10px 10px;
+}
+
+#nameAndTimeStamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#storiesBoxHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#profileList {
+    padding-left: 1.1rem;
+}
+
+@media screen and (max-width: 800px) {
+    #storiesBoxHeader {display: none;
+    }
+  }

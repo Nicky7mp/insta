@@ -1,9 +1,9 @@
-import React from 'react';
-import image from "../src/images/instagram-logo.png"
+import React, {Component} from 'react';
+import image from "../src/images/instagram-logo.png";
+import './Navbar.css'
 
 
-
-class Navbar extends React.Component {
+class Navbar extends Component {
     render() {
       return (
         <div className="navbar">
@@ -27,5 +27,6 @@ class Navbar extends React.Component {
         </div>
       )
     }
-  }
-  export default Navbar;
+}
+
+export default Navbar;

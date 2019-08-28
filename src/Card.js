@@ -1,55 +1,67 @@
+// import React, {Component} from 'react';
 import React from 'react';
-import Logo from "./images/Liverpool_FC.png"
+import './Card.css';
 
-// function Card() {
-//   return (
-//     <div className="App">
-//     <Feed/>
-//     </div>
-//   );
-// }
-class Card extends React.Component{
-  render(){
+const Card = (props) => {
     return(
-      <div className="card1">
-        <div className="profilename" id="userid">
-            <h1><img src={Logo} height="30px" width="30px"/> Liverpool FC</h1>
-              <div id="icon">
-              <button><i class="fas fa-ellipsis-h"></i></button>
+      <div className="card">
+
+        <div className="cardHeader">
+          <div id="profileButton">
+              <div>
+                <img id="profileIcon" src={props.profileIcon} alt="Profile Icon"/>
               </div>
+              <div id="profileName">
+                <h5>{props.profileName}</h5>
+              </div>
+          </div>
+
+          <div id="icon">
+            <button><i className="fas fa-ellipsis-h"></i></button>
+          </div>
         </div>
+
 
         <div>
-          <img id="pic" src="https://cdn.cnn.com/cnnnext/dam/assets/190809204036-liverpool-win-large-169.jpg" width="410px"/>
+          <img id="mainImage" src={props.mainImage} alt="mainImage" />
         </div>
+
 
         <div id="likecommentshare">
             <div id="likeicon">
-            <button><i class="far fa-heart"></i></button>
+            <button><i className="far fa-heart"></i></button>
             </div>
             <div id="commenticon">
-            <button><i class="far fa-comment"></i></button>
+            <button><i className="far fa-comment"></i></button>
             </div>
             <div id="shareicon">
-            <button><i class="fas fa-share-square"></i></button>
+            <button><i className="fas fa-share-square"></i></button>
             </div>
             <div id="bookmark">
-            <button><i class="far fa-bookmark"></i></button>
+            <button><i className="far fa-bookmark"></i></button>
             </div>
         </div>
 
         <div id="numlikes">
-          <h5>214,356 likes</h5>
+          <h5>{props.likes} likes</h5>
         </div>
-        <div id="caption">
+
+        <div id="comments">
           <p> <span>Liverpool FC </span>BOSS immy!!!</p>
         </div>
-        <div>
-          <input id="commentbox" type = "text" placeholder="Add a comment..."/>
+
+        <div id="commentbox">
+          <div id="typeSection">
+            <input type = "text" placeholder="Add a comment..."/>
+          </div>
+          <div id="postButton">
+            <button><h3>Post</h3></button>
+          </div>
         </div>
 
       </div>
     )
-  }
 }
+
 export default Card;
+
